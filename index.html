@@ -41,7 +41,7 @@
                 </div>
                 <div class="flex-none">
                     <div class="dropdown dropdown-end">
-                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle"
+                        <div id="cartModal" tabindex="0" role="button" class="btn btn-ghost btn-circle"
                             onclick="my_modal_1.showModal()">
                             <div class="indicator">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none"
@@ -294,7 +294,7 @@
         </section>
 
 
-        <!-- Open the modal using ID.showModal() method -->
+        <!-- modal 1 start-->
         <dialog id="my_modal_1" class="modal">
             <div class="modal-box">
                 <form method="dialog">
@@ -323,12 +323,31 @@
                         <p>Discount: <span id="discountContainer" class="text-slate-400">0 tk</span></p>
                         <p>Total: <span id="netPriceContainer" class="text-slate-400">0 tk</span></p>
                         <hr>
-                        <button id="purchaseBtn" class="btn bg-primary w-full text-white hover:text-black" disabled>Make
+                        <button onclick="my_modal_6.showModal()" id="purchaseBtn"
+                            class="btn bg-primary w-full text-white hover:text-black" disabled>Make
                             Purchase</button>
                     </div>
                 </div>
             </div>
         </dialog>
+        <!-- modal 1 end -->
+        <!-- modal 2 start -->
+        <dialog id="my_modal_6" class="modal">
+            <div class="modal-box text-center">
+                <div class="flex justify-center">
+                    <img src="./images/congo.png" alt="">
+                </div>
+                <h3 class="font-bold md:text-5xl">Congratulations</h3>
+                <p class="py-4">Your Purchase the product</p>
+                <div class="modal-action">
+                    <form method="dialog" class="flex justify-center w-full">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button id="goToHome" class="btn bg-primary text-white hover:text-black">Go Home</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- modal 2 end -->
     </main>
     <!-- main end -->
 

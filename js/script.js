@@ -59,3 +59,10 @@ couponBtn.addEventListener('click',()=>{
         alert('Please at least 200tk khoroch koren!')
     }
 });
+
+
+const goToHome = document.getElementById('goToHome');
+goToHome.addEventListener('click',()=>{
+    window.location.reload();
+});
+
